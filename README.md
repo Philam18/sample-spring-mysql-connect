@@ -1,7 +1,8 @@
-### Spring + MySQL 
+### Spring JDBC + MySQL 
       
-Sample code to get MySQL (via ConnectorJ) set up with Spring JDBC on Spring Boot with basic user/pass authentication.  
-Uses NamedParameterJdbcTemplate for templating.
+Getting set up with Spring JDBC and MySQL (via ConnectorJ) on Spring Boot.  
+DB authentication is done via basic user/pass.  
+Uses NamedParameterJdbcTemplate for templating.  
 
 Spring Boot 2.3.0  
 OpenJDK 11.0.7  
@@ -14,8 +15,7 @@ Dependencies:
 
 #### Setup
 
-Add lines to `src\main\java\com\example\demo4\mysql.properties`:
-
+Add the following lines to a configuration file `src\main\java\com\example\demo4\mysql.properties`:
 ```
 db.host=<...>
 db.port=<...>
@@ -26,4 +26,4 @@ db.connectionPoolMaxTotal=<...>
 ```
 
 #### Resources
-- [mysql connectorj ref](https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-usagenotes-spring-config.html)
+- [MySQL Connector Java reference](https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-usagenotes-spring-config.html)
